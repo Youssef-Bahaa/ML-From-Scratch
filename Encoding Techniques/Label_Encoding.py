@@ -35,8 +35,7 @@ class LabelEncoder:
 
 labels = ["cat", "dog", "cat", "bird", "dog"]
 encoder = LabelEncoder()
-ints = [1, 2, 1, 0, 2]
 lb = encoder.fit_transform(labels)
-i = encoder.inverse_transform(ints)
+i = encoder.inverse_transform(lb)
 print(lb)
 print(i)
